@@ -1,25 +1,36 @@
 import logo from './logo.svg';
-import './App.css';
+import './sass/dist/menu.css';
+import './sass/main.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ( <
+        nav className = "menu hide-for-desktop  " >
+        <
+        input type = "checkbox"
+        href = "#"
+        className = "menu-open"
+        name = "menu-open"
+        id = "menu-open" / >
+        <
+        label className = "menu-open-button"
+        for = "menu-open" >
+        <
+        span className = "lines line-1" > < /span> <
+        span className = "lines line-2" > < /span> <
+        span className = "lines line-3" > < /span> < /
+        label >
+
+        <
+        a href = "#"
+        className = "menu-item blue" > < /a> <
+        a href = "#"
+        className = "menu-item green" > < /a> <
+        a href = "#"
+        className = "menu-item red" > < /a>
+
+        <
+        /nav>
+    );
 }
 
 export default App;

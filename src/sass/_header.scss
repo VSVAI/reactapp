@@ -1,0 +1,65 @@
+.header {
+    font-family: 'Square721 BT';
+    background-color: grey;
+    color: black;
+    margin: 0em;
+    nav {
+        color: black;
+        top: 0;
+        width: 100%;
+        margin: 0px;
+    }
+    &__logo {
+        //logo
+        top: 0px;
+        left: 0px;
+        margin-left: 0.54em;
+        margin-top: 0.24em;
+    }
+    &__menu {
+        //mobile MENU
+        >span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $color1;
+        }
+    }
+    &__links {
+        padding-top: 3px;
+        padding-right: 10px;
+        button {
+            font-family: 'Shadows Into Light', cursive;
+            position: relative;
+            font-size: $font-med;
+            color: $color2;
+        }
+        a {
+            position: relative;
+            font-size: $font-med;
+            color: $color1;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 3px;
+                left: 0;
+                right: 0;
+                bottom: -10px;
+            }
+            &:hover {
+                color: red;
+                &::before {
+                    background: black;
+                }
+            }
+        }
+    }
+    &__cta {
+        font-size: $font-med;
+        color: $color2;
+    }
+}

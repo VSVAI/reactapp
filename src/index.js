@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Menu from './Menu';
 import Header from './Header';
-import './sass/main.scss'
+
+import './sass/main.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render( <
@@ -19,6 +21,15 @@ ReactDOM.render( <
     React.StrictMode >
     <
     App / >
+    <
+    /React.StrictMode>,
+    document.getElementById('data')
+
+);
+ReactDOM.render( <
+    React.StrictMode >
+    <
+    Menu / >
     <
     /React.StrictMode>,
     document.getElementById('root')

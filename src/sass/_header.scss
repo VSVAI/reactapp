@@ -2,17 +2,23 @@
     font-family: 'Square721 BT';
     background-color: grey;
     color: black;
-    margin: 0em;
+    margin-top: 6px;
+    padding-top: 15px;
     nav {
         color: black;
         top: 0;
         width: 100%;
-        margin: 0px;
+        margin: 2px;
+    }
+    img {
+        width: 40px;
+        height: 100%;
     }
     &__logo {
         //logo
         top: 0px;
         left: 0px;
+        padding-bottom: 5px;
         margin-left: 0.54em;
         margin-top: 0.24em;
     }

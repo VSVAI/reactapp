@@ -1,7 +1,7 @@
 //colors
-$color1: rgb(255, 255, 255);
+$color1: rgb(0, 0, 0);
 $color2: rgb(0, 0, 0);
-$color3: whitesmoke;
+$color3: rgb(0, 0, 0);
 //fonts
 $font-med: 0.9rem;
 $font-sm:0.5rem;
@@ -11,9 +11,35 @@ $font-sm:0.5rem;
 @import "./feature";
 h1 {
     font-family: 'Shadows Into Light', cursive;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     margin: 0px;
+}
+
+.block {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #ffffff;
+    display: none;
+    border: 20px;
+}
+
+.box {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #f0f7fb;
+    border: solid 1px #000000; //display: none;
+    border: 20px;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 15px 60px;
+}
+
+.image {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 500px;
 }
 
 i {
@@ -27,7 +53,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Shadows Into Light', cursive;
     position: relative;
-    margin: 0em;
+    margin: 5em;
 }
 
 span {
@@ -57,11 +83,29 @@ a:hover {
 
 button,
 .button {
-    padding: 0.7rem 1.65rem;
-    background: rgb(255, 61, 120);
-    border-radius: 4px;
+    font-family: 'Square721 BT';
+    font-size: 18px;
+    color: rgb(245, 237, 237);
+    padding: 0.2rem 0.5rem;
+    background: rgb(43, 133, 235);
+    border-radius: 5px;
     cursor: pointer;
-    border: 14;
+    position: auto relative;
+}
+
+newpage,
+.newpage {
+    padding: 0.4rem 2.0rem;
+    margin-left: 40px;
+    color: rgb(250, 250, 250);
+    background: rgb(9, 39, 100);
+    border-radius: 40px;
+    justify-content: center;
+    font-size: large;
+    &:hover {
+        background: rgb(0, 0, 0);
+        color: aqua;
+    }
 }
 
 //visibility
